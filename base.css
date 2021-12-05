@@ -1,0 +1,454 @@
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+
+}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* 上の部分は気にせずここから書く */
+/* --------------------------------------------------------------------- */
+
+html{
+	width: 1024;
+	margin-right: auto;
+	margin-left: auto;
+	background-color:  #f5f5f5;
+	
+}
+
+
+
+/* ------------------------------------------------------- */
+header{
+	position: fixed;
+	width: 100%;
+	height: 125px;
+	top:0%;
+	z-index: 100;
+	background-color: #FFFFFFF2;
+	/* background-color: #2da690; */
+	opacity: 0.99;
+	display: flex;
+	justify-content: space-between;
+}
+
+header img{
+	margin-left: 20px;
+	/* width:500px; */
+	height: 60px;
+	margin-top: 30px;
+	/* opacity: 1; */
+}
+
+header div{
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+
+header li{
+	margin-right: 80px;
+	font-weight: bold;
+	font-size: 110%;
+	/* margin-top: 30px; */
+	vertical-align: middle;
+	display: inline-block;
+  line-height: 125px;
+	
+
+}
+
+a {
+  color: #2da690
+};
+
+
+/* --------------------------*/
+
+
+.landingpage{
+	/* background-color: ; */
+}
+
+.landingpage img {
+	background-color: blue;
+  height: 100vh;
+	width: 100vw;
+	margin-top: 0;
+	top: 0;
+	filter: brightness(75%);
+	z-index: 1;
+}
+
+#cf7 img {
+  position:absolute;
+  /* left:0; */
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity:0;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+
+#cf7 img.opaque {
+  opacity:1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=1);
+}
+
+.landingpage .landingpage-p{
+	font-size: 2rem;
+	margin-left: 50px;
+	position: absolute;
+	top: 90vh;
+	/* font-family:  "Roboto","Noto Sans JP","Helvetica Neue",Helvetica,Arial,sans-serif; */
+	z-index: 10;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-weight: 1000;
+	line-height: 2.5rem;
+	/* display: none; */
+/* 
+	--animate-duration: 1s;
+	--animate-delay: 1s;
+	--animate-repeat: 1; */
+
+
+	/* animation-duration: 3s;
+  animation-name: slidein; */
+
+
+}
+
+
+/*1.フェードインアニメーションの指定*/
+.scrollanime {opacity: 0;} /*一瞬表示されるのを防ぐ*/
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;         
+    }
+    100% {
+    opacity: 1;
+    transform: translate(0);
+    }
+}
+ 
+/*2.上下の動きを指定*/
+.updown {transform: translateY(-100px);}
+.downup {transform: translateY(20vh);}
+ 
+/*3.左右の動きを指定*/
+.sect02{overflow: hidden;} /*横スクロールバーを隠す*/
+.slide-right {transform: translateX(200px);}
+.slide-left {transform: translateX(-200px);}
+/* 
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+} */
+
+/* ----------------------- */
+
+.service{
+	margin-top: 120vh;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: center;
+}
+
+.service-title{
+	margin-bottom: 100px;
+}
+
+h2{
+	text-align: center;
+	font-size: 200%;
+	font-weight: bold;
+	/* color: yellow */
+}
+
+
+
+.service hr { 
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 3px solid #2da690;
+	padding: 0;
+	margin-bottom: 20px;
+	width: 250px;
+}
+
+/* ---------------------------------------------------------------------- */
+
+.service .section{
+	position: relative;
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom:50px;
+	/* background-color: purple; */
+}
+
+.service .section2{
+	position: relative;
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom:50px;
+	/* background-color: purple; */
+}
+
+
+.section .service-left{
+	position: absolute;
+	width: 50%;
+	z-index: 4;
+	height: 100%;
+	background-color: greenyellow;
+	
+}
+
+.service2 .service-left{
+	position: absolute;
+	width: 50%;
+	z-index: 4;
+	height: 100%;
+	background-color: greenyellow;
+	
+}
+
+.section  .service-right-1, .section  .service-right-2{
+	position: absolute;
+	width: 60%;
+	z-index: 5;
+	/* background-color: lightcoral; */
+	height: 90%;
+	vertical-align: middle;
+	margin-left: 45%;
+	height: 100%;
+	opacity: 0.9;
+	
+	padding-top: 20px;
+	/* margin-top: 5%; */
+	/* padding: 40px; */
+}
+
+.section .service-left img{
+	width: 100%;
+	height: 100%;
+	/* width: 100%; */
+	object-fit: cover; 
+} 
+
+.section .service-right-1 div, .section  .service-right-2 div{
+	margin-top: 5%;
+	z-index: 5;
+	opacity: 0.99;
+	background-color: white;
+	width: 50%;
+	height: 70%;
+	text-align: left;
+}
+
+
+
+
+/* -------------- */
+.section  .service-right-1 img{
+	padding-top: 20px;
+	margin-top: 50px;
+	width: 200px;
+	margin-bottom: 50px;
+	margin-left: 30px;
+
+}
+
+h5{
+	margin-left: 30px;
+	font-weight: bold;
+	font-size: 200%;
+	margin-bottom: 10px;
+}
+.service-right-1 small, .service-right-2 small{
+	margin-left: 30px;
+	margin-bottom: 20px;
+
+}
+
+.launch-icon{
+	margin-top: 50px;
+	color: #2da690;
+	margin-left: 30px;
+}
+
+/* ---------------- */
+.section  .service-right-2 img{
+	padding-top: 20px;
+	margin-top: 50px;
+	width: 200px;
+	margin-bottom: 30px;
+	margin-left: 30px; 
+ 
+}
+
+
+
+
+/* ------------------------------------------------------ -----------kkokokokokokokoko */
+
+
+.service .section-2{
+	position: relative;
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom:50px;
+	/* background-color: purple; */
+}
+
+
+.section-2 .service-right{
+	position: absolute;
+	width: 50%;
+	z-index: 4;
+	height: 100%;
+	background-color: greenyellow;
+	
+}
+
+.service-2 .service-left{
+	position: absolute;
+	width: 50%;
+	z-index: 4;
+	height: 100%;
+	background-color: greenyellow;
+	
+}
+
+.section-2  .service-left{
+	position: absolute;
+	width: 60%;
+	z-index: 5;
+	/* background-color: lightcoral; */
+	height: 90%;
+	vertical-align: middle;
+	margin-right: 45%;
+	height: 100%;
+	opacity: 0.9;
+	
+	padding-top: 20px;
+	/* margin-top: 5%; */
+	/* padding: 40px; */
+}
+
+.section-2 .service-right img{
+	width: 100%;
+	height: 100%;
+	/* width: 100%; */
+	object-fit: cover; 
+} 
+
+.section .service-right-1 div, .section  .service-right-2 div{
+	margin-top: 5%;
+	z-index: 5;
+	opacity: 0.99;
+	background-color: white;
+	width: 50%;
+	height: 70%;
+	text-align: left;
+}
+
+
+
+
+/* -------------- */
+.section  .service-right-1 img{
+	padding-top: 20px;
+	margin-top: 50px;
+	width: 200px;
+	margin-bottom: 50px;
+	margin-left: 30px;
+
+}
+
+h5{
+	margin-left: 30px;
+	font-weight: bold;
+	font-size: 200%;
+	margin-bottom: 10px;
+}
+.service-right-1 small, .service-right-2 small{
+	margin-left: 30px;
+	margin-bottom: 20px;
+
+}
+
+.launch-icon{
+	margin-top: 50px;
+	color: #2da690;
+	margin-left: 30px;
+}
+
+/* ---------------- */
+.section  .service-right-2 img{
+	padding-top: 20px;
+	margin-top: 50px;
+	width: 200px;
+	margin-bottom: 30px;
+	margin-left: 30px;
+
+}

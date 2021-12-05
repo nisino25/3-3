@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
+    $(function(){
+      // ここに処理を記述
+
+      // let images = ['IMG_0224-1.jpeg', 'IMG_0242-1.jpeg','IMG_0258-1.jpeg','IMG_0256.jpeg','IMG_0218-4.jpeg',];
+
+      let index = 0;
+      // const imgElement = document.querySelector('#landing_image');
+
+      function changeLandingImage() {
+        index++
+        $('img').removeClass("opaque");
+        switch(index){
+          case 0:
+            $(".img0" ).toggleClass("opaque");
+            break;
+
+            case 1:
+            $(".img1").toggleClass("opaque");
+
+            break;
+
+            case 2:
+            $(".img2").toggleClass("opaque");
+
+            break;
+
+            case 3:
+            $(".img3").toggleClass("opaque");
+
+            break;
+
+            case 4:
+            $(".img4").toggleClass("opaque");
+            index = -1
+            break;
+          
+          
+        }
+      }
+      
+      // function moveUp(){
+      //   // $("#landing-p").animate({up: '10vh'});
+      //   // $("#landing-p").slideUp(speed,callback);
+
+      //   console.log('sdfopjsoij')
+      // }
+
+      $(window).scroll(function () {
+        const wHeight = $(window).height();
+          const scrollAmount = $(window).scrollTop();
+          $('.scrollanime').each(function () {
+              const targetPosition = $(this).offset().top;
+              if(scrollAmount > targetPosition - wHeight + 60) {
+                console.log('now')
+                  $(this).addClass("fadeInDown");
+              }
+          });
+      });
+
+      function startUp(){
+        $("#landing-p").addClass("fadeInDown");
+        console.log('ciniung')
+
+        setTimeout(function () {
+          $("header").addClass("fadeInDown");
+        }, 750)
+      }
+
+      window.onload = function () {
+
+        setTimeout(function () {
+          startUp();
+        }, 1000)
+        // put two animations 
+        // top navbar and the p with yellow color 
+        // $( "#landing-p" ).animate({
+        //   // opacity: 0.25,
+        //   left: "+=50",
+        //   he: "50px",
+        //   top: '92.5vh'
+        // }, 1000, function() {
+        //   // Animation complete.
+        // });
+        // $( "#landing-p" ).slideDown( "slow" );
+        // $("#landing-p").animate({up: '250px'});
+
+          // moveUp();
+// 
+        setInterval(changeLandingImage, 4000);
+        // setInterval(moveUp, 1000);
+      };
+
+      $('.landingpage').on("click", function(){
+        
+      });
+    });
+    </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="scrollanime updown landingpage-p">
+      <div><img src="/image/logo_green.png" alt=""></div>
+      <div class="nav">
+        <li><a href="#">News</a> </li>
+        <li><a href="#">About</a> </li>
+        <li><a href="#">Service</a> </li>
+        <li><a href="#">Recruit</a> </li>
+        <li><a href="#">Contact</a> </li>
+      </div>
+
+    </header>
+
+    <div class="content">
+
+      <div class="landingpage">
+
+        <div id="cf7" class="landingpage-image">
+          <img class="img0 opaque"   src="./image/IMG_0224-1.jpeg" />
+          <img class='img1' src="./image/IMG_0242-1.jpeg" />
+          <img class='img2' src="./image/IMG_0258-1.jpeg" />
+          <img class='img3' src="./image/IMG_0256.jpeg" />
+          <img class='img4' src="./image/IMG_0218-4.jpeg" />
+          
+        </div>
+
+        <div id="landing-p" class="scrollanime downup landingpage-p">
+          <p>世の中の課題をITで解決し、<span style="color: #FCE244">関わった世界中の人たちを幸せにする</span> </p>
+        </div>
+
+      </div> 
+
+      <div class="service">
+
+        <div class="service-title">
+          <hr>
+          <h2>Our Service</h2>
+        </div>
+
+        <div class="section">
+
+          <div class="service-left">
+            <img src="./image/educure01.jpg" alt="">
+          </div>
+
+          <div class="service-right-1" onclick="window.open('https://lp.educure.jp/','mywindow');">
+            <div>
+              <img src="/image/black.png" alt="">
+              <h5>DXを推進する　エンジニア育成</h5>
+              <small>IT事業参入をご検討中の事業者向けのサービスです</small>
+              <br>
+              <i class="material-icons launch-icon" style="color:#2da690">launch</i>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="section-2">
+
+          <div class="service-right">
+            <img src="./image/techpassion01.jpg" alt="">
+          </div>
+
+          <div style="margin-left: 45%;" class="service-left" onclick="window.open('https://lp.educure.jp/','mywindow');">
+            <div>
+              <img src="/image/abb886337b510d088a858a59a12bf114.png" alt="">
+              <h5>人生を変える英会話アプリ</h5>
+              <small>登録者数２５万人！　Youtube講師ジョージ監修！　オンライン英会話アプリ</small>
+              <br>
+              <i class="material-icons launch-icon" style="color:#2da690">launch</i>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- <div class="section">
+
+          <div class="service-left">
+            <img src="./image/6c40ac7b707e13491fda6a6b4f02d82d.jpg" alt="">
+          </div>
+
+          <div style="margin-left: 45%;" class="service-right-2" onclick="window.open('https://lp.educure.jp/','mywindow');">
+            <div>
+              <img src="/image/abb886337b510d088a858a59a12bf114.png" alt="">
+              <h5>人生を変える英会話アプリ</h5>
+              <small>登録者数２５万人！　Youtube講師ジョージ監修！　オンライン英会話アプリ</small>
+              <br>
+              <i class="material-icons launch-icon" style="color:#2da690">launch</i>
+            </div>
+          </div>
+
+        </div> -->
+      </div>
+      
+
+
+    </div>
+  </div>
+  
+</body>
+
+</html>
