@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   <meta charset="UTF-8">
@@ -61,8 +62,9 @@
           $('.scrollanime').each(function () {
               const targetPosition = $(this).offset().top;
               if(scrollAmount > targetPosition - wHeight + 60) {
-                console.log('now')
-                  $(this).addClass("fadeInDown");
+                console.log($(this))
+                  $(this).addClass("fadeInDown"); 
+                
               }
           });
       });
@@ -110,14 +112,20 @@
 <body>
   <div class="wrapper">
     <header class="scrollanime updown landingpage-p">
-      <div><img src="/image/logo_green.png" alt=""></div>
-      <div class="nav">
-        <li><a href="#">News</a> </li>
-        <li><a href="#">About</a> </li>
-        <li><a href="#">Service</a> </li>
-        <li><a href="#">Recruit</a> </li>
-        <li><a href="#">Contact</a> </li>
+      <div class="header-column">
+
+        <div><img src="/image/logo_green.png" alt=""></div>
+
+        <div class="nav">
+          <li><a href="#">News</a> </li>
+          <li><a href="#">About</a> </li>
+          <li><a href="#">Service</a> </li>
+          <li><a href="#">Recruit</a> </li>
+          <li><a href="#">Contact</a> </li>
+        </div>
+
       </div>
+      
 
     </header>
 
@@ -142,14 +150,14 @@
 
       <div class="service">
 
-        <div class="service-title">
+        <div class="service-title scrollanime downup">
           <hr>
           <h2>Our Service</h2>
         </div>
 
-        <div class="section">
+        <div class="section scrollanime updown ">
 
-          <div class="service-left">
+          <div class="service-left ">
             <img src="./image/educure01.jpg" alt="">
           </div>
 
@@ -165,7 +173,7 @@
 
         </div>
 
-        <div class="section-2">
+        <div class="section-2 scrollanime downup">
 
           <div class="service-right">
             <img src="./image/techpassion01.jpg" alt="">
@@ -183,7 +191,7 @@
 
         </div>
 
-        <div class="section">
+        <div class="section scrollanime downup">
 
           <div class="service-left">
             <img src="./image/6c40ac7b707e13491fda6a6b4f02d82d.jpg" alt="">
@@ -201,7 +209,7 @@
 
         </div>
 
-        <div style="float: right; margin-right: 500px; font-size: 120%; font-weight: bold; vertical-align: middle;   display: flex; align-items: center;" onclick="window.open('https://linew.co.jp/service/','mywindow');">
+        <div class="scrollanime slide-left" style="float: right; margin-right: 500px; font-size: 120%; font-weight: bold; vertical-align: middle;   display: flex; align-items: center;" onclick="window.open('https://linew.co.jp/service/','mywindow');">
         
         
           <span>Other service &nbsp;</span> 
@@ -213,14 +221,14 @@
       </div>
 
       <div class="vision">
-        <div class="vision-title">
-          <hr>
-          <h2>Our Service</h2>
-          <h1>世の中の課題をITで解決して、<br>
+        <div class="vision-title ">
+          <hr class="scrollanime updown">
+          <h2 class="scrollanime updown">Our Service</h2>
+          <h1 class="scrollanime downup">世の中の課題をITで解決して、<br>
             関わった世界中の人たちを幸せにする</h1>
         </div>
 
-        <div class="vision-column" >
+        <div class="vision-column scrollanime downup" >
 
           <div> 
             <p>ITを通じて
@@ -236,20 +244,21 @@
           <div>
             <p>世界から選ばれる
               企業へ</p>
-            <span>常に最高のパフォーマンスを発揮します</span></div>
+            <span>常に最高のパフォーマンスを発揮します</span>
+          </div>
 
         </div>
 
       </div>
 
       <div class="news">
-        <div class="news-title">
+        <div class="news-title scrollanime updown">
           <hr>
           <h2>News</h2>
         </div>
 
-        <div class="article-section">
-          <div class="article">
+        <div class="article-section ">
+          <div class="article  scrollanime downup">
             <div class="article-img">
               <img src="/image/prtimes.png" alt="">
             </div>
@@ -260,10 +269,10 @@
             </div>
             
           </div>
-          <hr>
+          <hr class="scrollanime downup">
           
 
-          <div class="article">
+          <div class="article scrollanime downup">
             <div class="article-img">
               <img src="/image/IMG_0218-4.jpeg" alt="">
             </div>
@@ -273,9 +282,9 @@
               <p>本社オフィス移転のお知らせ</p>
             </div>
           </div>
-          <hr>
+          <hr class="scrollanime downup">
 
-          <div class="article">
+          <div class="article scrollanime downup">
             <div class="article-img">
               <img src="/image/prtimes.png" alt="">
             </div>
@@ -286,9 +295,9 @@
             </div>
             
           </div>
-          <hr>
+          <hr class="scrollanime downup">
 
-          <div class="article">
+          <div class="article scrollanime downup">
             <div class="article-img">
               <img src="/image/prtimes.png" alt="">
             </div>
@@ -299,9 +308,9 @@
             </div>
             
           </div>
-          <hr>
+          <hr class="scrollanime downup">
 
-          <div class="article">
+          <div class="article scrollanime downup">
             <div class="article-img">
               <img src="/image/prtimes.png" alt="">
             </div>
@@ -312,29 +321,29 @@
             </div>
             
           </div>
-          <hr>
+          <hr class="scrollanime downup">
 
 
         </div>
 
-        <div style="margin-top:50px; float: right; margin-right: 300px; font-size: 120%; font-weight: bold; vertical-align: middle;   display: flex; align-items: center;" onclick="window.open('https://linew.co.jp/news/','mywindow');">
+        <div class="scrollanime slide-left" style="margin-top:50px; float: right; margin-right: 300px; font-size: 120%; font-weight: bold; vertical-align: middle;   display: flex; align-items: center;" onclick="window.open('https://linew.co.jp/news/','mywindow');">
         
         
           <span>Other news &nbsp;</span> 
             <span class="material-icons" style="color:#2da690;">
               arrow_circle_right
-            </span>
+          </span>
         </div>
       </div>
 
       <div class="about">
-        <div class="about-title">
+        <div class="about-title scrollanime updown">
           <hr>
           <h2>About Us</h2>
         </div>
 
         <div class="about-content">
-          <div class="about-content-column">
+          <div class="about-content-column scrollanime updown">
 
             <div class="about-content-section">
               <div class="about-content-left">&nbsp; 会社名</div>
@@ -444,11 +453,64 @@
             </div>
 
           </div>
-          <div class="about-image about-content-column">
+          <div class="about-image about-content-column scrollanime downup">
             <img src="./image/IMG_0218-4.jpeg" alt="">
           </div>
+          
+        </div>
+
+        <div class='moreinfo-btn scrollanime slide-left'>
+          <span>More info &nbsp;</span> 
+            <i class="material-icons" style="color:#2da690; vertical-align: middle;">
+              arrow_circle_right
+            </i>
         </div>
       </div>
+
+      <div class="recruit">
+        <div class="recruit-title">
+          <hr class="scrollanime updown">
+          <h2 class="scrollanime updown">Recruit</h2>
+          <h2 class="scrollanime downup" style="margin-top: 30px;">熱いパッションを持っている<span style="color: #2da690;">あなた</span> を待っています。</h2>
+        </div>  
+
+
+        <div class="recruit-content">
+
+          <h2 class="scrollanime downup" style="padding: 50px; margin-bottom: 20px;" >現在募集中の職種</h2>
+          <div class="recruit-content-column scrollanime downup">
+            <div>
+              <span>エンジニア</span> 　<small style="color: #2da690; margin-left: -5px;">&#8594;</small> 
+            </div>
+
+            <div>
+              <span>営業 </span>　<small style="color: #2da690; margin-left: -5px;">&#8594;</small>
+              
+            </div>
+
+            <div>
+              <span>PP・広報</span> 　<small style="color: #2da690; margin-left: -5px;">&#8594;</small>
+              </span>
+            </div>
+
+          </div>
+          
+        </div>
+
+        <div class='moreinfo-btn scrollanime slide-left' style="margin-top: 50px;">
+          <span>More info &nbsp;</span> 
+            <i class="material-icons" style="color:#2da690; vertical-align: middle;">
+              arrow_circle_right
+            </i>
+        </div>
+
+          
+
+
+      </div>
+
+
+      
 
       
       
@@ -457,7 +519,67 @@
 
 
     </div>
+    
+
+
+    <footer>
+      <div class="footer-column">
+        <div class="footer-left">
+          <div>
+            <img src="https://linew.co.jp/wp-content/themes/linew/library/images/logo_white.svg" alt="">
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <span>〒150-0002 <br>
+              東京都渋谷区渋谷3丁目6-20　第5矢木ビル 5F <br>
+              <span  style="color: #2da690;"> 03-6453-8617</span></span>
+          </div>
+
+          <div>
+            <small>© 2021 株式会社LiNew.</small>
+          </div>
+
+        </div>
+
+        <div class="footer-right">
+          <div>
+            <ul>
+              <div>News</div>
+              <div>About</div>
+              <div>Service</div>
+              <div>Recruit</div>
+              <div>Contact</div>
+            </ul>
+          </div>
+
+          <div class="footer-right-column"> 
+              <div>
+                <span>educure</span> 　<small style="color: #2da690; margin-left: -5px;">&#8594;</small> 
+              </div>
+  
+              <div>
+                <span>TECH Passion</span>　<small style="color: #2da690; margin-left: -5px;">&#8594;</small>
+                
+              </div>
+  
+              <div>
+                <span>人生を変える英会話アプリ</span> 　<small style="color: #2da690; margin-left: -5px;">&#8594;</small>
+                </span>
+              </div>
+            
+          </div>
+
+        </div>
+
+      </div>
+      
+
+    </footer>
+  
+  
   </div>
+
+
   
 </body>
 
