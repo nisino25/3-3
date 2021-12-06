@@ -64,6 +64,10 @@
               if(scrollAmount > targetPosition - wHeight + 60) {
                 console.log($(this))
                   $(this).addClass("fadeInDown"); 
+                  // $(this).delay(2000).queue(function() {  // Wait for 1 second.
+                  //   $(this).removeClass("fadeInDown").dequeue();
+                  //   $(this).addClass("done");
+                  // });
                 
               }
           });
@@ -114,9 +118,9 @@
     <header class="scrollanime updown landingpage-p">
       <div class="header-column">
 
-        <div><img src="/image/logo_green.png" alt=""></div>
+        <div class="header-image"><img src="/image/logo_green.png" alt=""></div>
 
-        <div class="nav">
+        <div class="header-nav">
           <li><a href="#">News</a> </li>
           <li><a href="#">About</a> </li>
           <li><a href="#">Service</a> </li>
