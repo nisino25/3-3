@@ -15,7 +15,7 @@ ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
 
 textarea { font-size: 100%; vertical-align:middle;}
 img { border-style: none; display: block; }
-hr { display: none; }
+/* hr { display: none; } */
 em{font-style: normal}
 input{line-height:auto;vertical-align:middle;}
 strong.more{color:#c30}
@@ -41,7 +41,8 @@ body {
 /* --------------------------------------------------------------------- */
 
 html{
-	width: 1024;
+	/* width: 1024px; */
+	width: 100vw;
 	margin-right: auto;
 	margin-left: auto;
 	background-color:  #f5f5f5;
@@ -194,7 +195,7 @@ a {
   }
 } */
 
-/* ----------------------- */
+/* ------------------------------------------------------------- */
 
 .service{
 	margin-top: 120vh;
@@ -338,7 +339,7 @@ h5{
 .section  .service-right-2 img{
 	padding-top: 20px;
 	margin-top: 50px;
-	width: 200px;
+	width: 100px;
 	margin-bottom: 30px;
 	margin-left: 30px; 
  
@@ -370,12 +371,12 @@ h5{
 	
 }
 
-.service-2 .service-left{
+.section-2 .service-left{
 	position: absolute;
 	width: 50%;
 	z-index: 4;
 	height: 100%;
-	background-color: greenyellow;
+	/* background-color: greenyellow; */
 	
 }
 
@@ -386,9 +387,10 @@ h5{
 	/* background-color: lightcoral; */
 	height: 90%;
 	vertical-align: middle;
-	margin-right: 45%;
+	margin-right: 15%;
 	height: 100%;
 	opacity: 0.9;
+	text-align: right;
 	
 	padding-top: 20px;
 	/* margin-top: 5%; */
@@ -402,7 +404,7 @@ h5{
 	object-fit: cover; 
 } 
 
-.section .service-right-1 div, .section  .service-right-2 div{
+.section-2 .service-left div{
 	margin-top: 5%;
 	z-index: 5;
 	opacity: 0.99;
@@ -416,39 +418,294 @@ h5{
 
 
 /* -------------- */
-.section  .service-right-1 img{
-	padding-top: 20px;
-	margin-top: 50px;
-	width: 200px;
-	margin-bottom: 50px;
-	margin-left: 30px;
 
-}
 
-h5{
+.section-2 h5{
 	margin-left: 30px;
 	font-weight: bold;
 	font-size: 200%;
 	margin-bottom: 10px;
 }
-.service-right-1 small, .service-right-2 small{
+.section-2 .service-left small{
 	margin-left: 30px;
 	margin-bottom: 20px;
 
 }
 
-.launch-icon{
+.section-2 .launch-icon{
 	margin-top: 50px;
 	color: #2da690;
 	margin-left: 30px;
 }
 
 /* ---------------- */
-.section  .service-right-2 img{
+.section-2 .service-left img{
 	padding-top: 20px;
 	margin-top: 50px;
 	width: 200px;
 	margin-bottom: 30px;
 	margin-left: 30px;
 
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+
+.vision{
+	background-image: url("./image/bg01.jpg");
+	height: 750px;
+	margin-top: 350px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: center;
+	background-repeat: no-repeat;
+	/* width: 100%; */
+}
+
+.vision-title{
+	/* margin-top: 10px; */
+	padding-top: 50px;
+	margin-bottom: 100px;
+}
+
+h1{
+	margin-top: 100px;
+	text-align: center;
+	font-size: 300%;
+	font-weight: bold;
+	/* color: yellow */
+}
+
+.vision hr { 
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 3px solid #2da690;
+	padding: 0;
+	margin-bottom: 20px;
+	width: 250px;
+}
+
+.vision-column{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+}
+
+.vision-column p{
+	font-size: 300%;
+	max-width:400px;
+	text-align: center;
+	color:#2da690;
+	margin-bottom: 20px;
+}
+
+
+/* ------------------------------------------------------------------------ */
+.news-title{
+	/* margin-top: 10px; */
+	padding-top: 100px;
+	margin-bottom: 100px;
+	/* background-color: yellow; */
+}
+
+.news-title hr { 
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 3px solid #2da690;
+	padding: 0;
+	margin-bottom: 20px;
+	width: 250px;
+}
+
+
+
+.article{
+	display: flex;
+	justify-content: flex-start;
+	width: 55%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	/* background-color: yellow; */
+}
+
+.article-img{
+	/* width: 1000px; */
+	/* background-color: red; */
+	height: auto;
+}
+
+.article-content{
+	/* width: 1000px; */
+	/* background-color: blue; */
+	height: auto;
+}
+
+
+.article img{
+	width: 200px;
+	height: 100px;
+	/* height: 100px; */
+	object-fit: cover; 
+	margin-right: 20px;
+
+}
+
+.article small{
+	color: gray;
+}
+
+.article span{
+	font-weight: bold;
+}
+
+.article p{
+	margin-top: 15px;
+}
+
+.article-section hr{
+	/* height: 10px; */
+	/* background-color: red;
+	border: none;
+	display: show; */
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1.5px solid lightgrey;
+	padding: 0;
+	margin-bottom: 20px;
+	width:55%;
+
+	
+}
+
+/* ------------------------------------------------------------------------ */
+.about{
+	margin-top: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: center;
+}
+
+.about-title{
+	/* margin-top: 10px; */
+	padding-top: 100px;
+	margin-bottom: 100px;
+	
+	/* justify-content: center; */
+	/* background-color: yellow; */
+}
+
+.about-title hr { 
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 3px solid #2da690;
+	padding: 0;
+	margin-bottom: 40px;
+	width: 250px;
+}
+
+.about-content{
+	width: 60%;
+	display: flex;
+	justify-content: space-between;
+	margin-right: auto;
+	margin-left: auto;
+	/* justify-content: center; */
+}
+
+.about-content-column{
+	width:50%
+
+}
+
+.about-image{
+	/* margin-left: auto;
+	margin-right: auto;
+	justify-content: center; */
+
+}
+
+.about-content img{
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	object-fit: cover; 
+	
+	/* width: 90%; */
+	/* height: 100%; */
+}
+
+.about-content-section{
+	display: flex;
+	justify-content: flex-start;
+	color: brown;
+	/* text-align: left; */
+}
+
+.about-content div{
+	margin-bottom: 5px;
+}
+
+.about-content-left{
+	/* margin-left: 50px; */
+	/* background-color: lightsalmon; */
+	width: 20%;
+}
+.about-content-right{
+	/* background-color: blue; */
+	max-width:60%;
+	width: 60%;
+	display: column;
+}
+
+.about-content hr { 
+	/* margin-right: auto; */
+	margin-left: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 2px solid #2da690;
+	padding: 0;
+	/* text-align: left; */
+	width: 90%;
+}
+
+.about-content-right hr{
+	border-top: 2px solid grey;
+}
+
+.google-map small{
+	font-size: 105%;
+	vertical-align: middle;
+}
+
+.google-map-launch-icon{
+	/* margin-top: -100px; */
+	/* color: grey; */
+	vertical-align: middle;
+	/* font-size: 40%; */
+	/* line-height: 5; */
+
+	/* color: #2da690; */
+	
+	
 }
